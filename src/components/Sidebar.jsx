@@ -9,21 +9,6 @@ function Sidebar() {
           <nav className="sidebar-nav" id="sidabar-custom">
             <ul>
               <li className="sidebar-item">
-                <a
-                  className="sidebar-link"
-                  href="javascript:void(0)"
-                  aria-expanded="false"
-                >
-                  <img
-                    src="ample/src/assets/images/users/1.jpg"
-                    className="rounded-circle ms-2"
-                    width={30}
-                  />
-                  <span className="hide-menu"> Krishanathep J.</span>
-                </a>
-              </li>
-              <div className="devider" />
-              <li className="sidebar-item">
                 <NavLink
                 className="sidebar-link waves-effect waves-dark"
                   to={"/"}

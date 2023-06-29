@@ -1,6 +1,18 @@
 import React from 'react'
+import { useNavigate } from "react-router-dom";
+import { useSignOut,useAuthUser } from 'react-auth-kit'
 
 function Navbar() {
+
+  const navigate = useNavigate()
+  const userDatail = useAuthUser()
+  const signOut = useSignOut()
+
+  const handleSignOut = () => {
+    signOut()
+    navigate('/signin')
+  }
+
   return (
     <>
     <header className="topbar">
@@ -144,19 +156,19 @@ function Navbar() {
           <li className="nav-item dropdown">
             <a className="nav-link dropdown-toggle waves-effect waves-dark" href="#" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
               <img src="ample/src/assets/images/users/1.jpg" alt="user" className="rounded-circle" width={36} />
-              <span className="ms-2 font-weight-medium">Krishanathep.J</span><span className="fas fa-angle-down ms-2" />
+              <span className="ms-2 font-weight-medium">{userDatail().name}</span><span className="fas fa-angle-down ms-2" />
             </a>
             <div className="dropdown-menu dropdown-menu-end user-dd dropdown-menu-animate-up" aria-labelledby={2}>
               <div className="d-flex no-block align-items-center p-3 bg-info text-white mb-2">
                 <div className><img src="ample/src/assets/images/users/1.jpg" alt="user" className="rounded-circle" width={60} /></div>
                 <div className="ms-2">
-                  <h4 className="mb-0 text-white">Krishanathep.J</h4>
-                  <p className=" mb-0">krishanathep@gmail.com</p>
+                  <h4 className="mb-0 text-white">{userDatail().name}</h4>
+                  <p className=" mb-0">{userDatail().email}</p>
                 </div>
               </div>
               <a className="dropdown-item" href="#"><i className="text-success mdi mdi-account" /> My Profile</a>
               <div className="dropdown-divider" />
-              <a className="dropdown-item" href="#"><i className="text-danger mdi mdi-logout" /> Logout</a>
+              <a className="dropdown-item" href="#" onClick={handleSignOut}><i className="text-danger mdi mdi-logout" /> Logout</a>
             </div>
           </li>
         </ul>
