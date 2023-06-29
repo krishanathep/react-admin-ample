@@ -10020,6 +10020,7 @@ Notify
   width: 250px;
   background: inherit; }
   .sidebar-nav ul .sidebar-item .sidebar-link {
+    background-color: rgb(254, 0, 0);
     color: #fff;
     padding: 17px 13px;
     display: flex;
@@ -10029,6 +10030,7 @@ Notify
     opacity: 0.8;
     font-weight: 300; }
     .sidebar-nav ul .sidebar-item .sidebar-link i {
+      background-color: rgb(254, 0, 0);
       font-style: normal;
       width: 35px;
       line-height: 25px;

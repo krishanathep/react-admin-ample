@@ -9,13 +9,13 @@ function Navbar() {
         <a className="nav-toggler waves-effect waves-light d-block d-md-none" href="javascript:void(0)"><i className="ti-menu ti-close" /></a>
         <a className="navbar-brand" href="index.html">
           <b className="logo-icon">
-            <img src="src/assets/ample/src/assets/images/logos/logo-icon.png" alt="homepage" className="dark-logo" />
-            <img src="src/assets/ample/src/assets/images/logos/logo-light-icon.png" alt="homepage" className="light-logo" />
+            <img src="ample/src/assets/images/logos/logo-icon.png" alt="homepage" className="dark-logo" />
+            <img src="ample/src/assets/images/logos/logo-light-icon.png" alt="homepage" className="light-logo" />
           </b>
           <span className="logo-text">
-            <img src="src/assets/ample/src/assets/images/logos/logo-text.png" alt="homepage" className="dark-logo" />
+            <img src="ample/src/assets/images/logos/logo-text.png" alt="homepage" className="dark-logo" />
  
-            <img src="src/assets/ample/src/assets/images/logos/logo-light-text.png" className="light-logo" alt="homepage" />
+            <img src="ample/src/assets/images/logos/logo-light-text.png" className="light-logo" alt="homepage" />
           </span>
         </a>
         <a className="topbartoggler d-block d-md-none waves-effect waves-light" href="javascript:void(0)" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><i className="ti-more" /></a>
@@ -41,7 +41,7 @@ function Navbar() {
                   <div className="message-center message-body position-relative" style={{height: 230}}>
                     {/* Message */}
                     <a href="javascript:void(0)" className="message-item d-flex align-items-center border-bottom px-3 py-2">
-                      <span className="user-img position-relative d-inline-block"> <img src="src/assets/ample/src/assets/images/users/1.jpg" alt="user" className="rounded-circle w-100" /> <span className="profile-status rounded-circle online" /> </span>
+                      <span className="user-img position-relative d-inline-block"> <img src="ample/src/assets/images/users/1.jpg" alt="user" className="rounded-circle w-100" /> <span className="profile-status rounded-circle online" /> </span>
                       <div className="w-75 d-inline-block v-middle ps-3">
                         <h5 className="message-title mb-0 mt-1 fs-3 fw-bold">Pavan kumar</h5> <span className="fs-2 text-nowrap d-block time text-truncate fw-normal mt-1">Just see
                           the my admin!</span> <span className="fs-2 text-nowrap d-block subtext text-muted">9:30 AM</span>
@@ -49,7 +49,7 @@ function Navbar() {
                     </a>
                     {/* Message */}
                     <a href="javascript:void(0)" className="message-item d-flex align-items-center border-bottom px-3 py-2">
-                      <span className="user-img position-relative d-inline-block"> <img src="src/assets/ample/src/assets/images/users/2.jpg" alt="user" className="rounded-circle w-100" /> <span className="profile-status rounded-circle busy" /> </span>
+                      <span className="user-img position-relative d-inline-block"> <img src="ample/src/assets/images/users/2.jpg" alt="user" className="rounded-circle w-100" /> <span className="profile-status rounded-circle busy" /> </span>
                       <div className="w-75 d-inline-block v-middle ps-3">
                         <h5 className="message-title mb-0 mt-1 fs-3 fw-bold">Sonu Nigam</h5> <span className="fs-2 text-nowrap d-block time text-truncate">I've sung
                           a song! See you at</span> <span className="fs-2 text-nowrap d-block subtext text-muted">9:10 AM</span>
@@ -65,7 +65,7 @@ function Navbar() {
                     </a>
                     {/* Message */}
                     <a href="javascript:void(0)" className="message-item d-flex align-items-center border-bottom px-3 py-2">
-                      <span className="user-img position-relative d-inline-block"> <img src="src/assets/ample/src/assets/images/users/4.jpg" alt="user" className="rounded-circle w-100" /> <span className="profile-status rounded-circle offline" /> </span>
+                      <span className="user-img position-relative d-inline-block"> <img src="ample/src/assets/images/users/4.jpg" alt="user" className="rounded-circle w-100" /> <span className="profile-status rounded-circle offline" /> </span>
                       <div className="w-75 d-inline-block v-middle ps-3">
                         <h5 className="message-title mb-0 mt-1 fs-3 fw-bold">Pavan kumar</h5> <span className="fs-2 text-nowrap d-block time text-truncate">Just see
                           the my admin!</span> <span className="fs-2 text-nowrap d-block subtext text-muted">9:02 AM</span>
@@ -143,12 +143,12 @@ function Navbar() {
         <ul className="navbar-nav">
           <li className="nav-item dropdown">
             <a className="nav-link dropdown-toggle waves-effect waves-dark" href="#" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-              <img src="src/assets/ample/src/assets/images/users/1.jpg" alt="user" className="rounded-circle" width={36} />
+              <img src="ample/src/assets/images/users/1.jpg" alt="user" className="rounded-circle" width={36} />
               <span className="ms-2 font-weight-medium">Krishanathep.J</span><span className="fas fa-angle-down ms-2" />
             </a>
             <div className="dropdown-menu dropdown-menu-end user-dd dropdown-menu-animate-up" aria-labelledby={2}>
               <div className="d-flex no-block align-items-center p-3 bg-info text-white mb-2">
-                <div className><img src="src/assets/ample/src/assets/images/users/1.jpg" alt="user" className="rounded-circle" width={60} /></div>
+                <div className><img src="ample/src/assets/images/users/1.jpg" alt="user" className="rounded-circle" width={60} /></div>
                 <div className="ms-2">
                   <h4 className="mb-0 text-white">Krishanathep.J</h4>
                   <p className=" mb-0">krishanathep@gmail.com</p>

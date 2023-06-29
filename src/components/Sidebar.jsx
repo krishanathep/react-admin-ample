@@ -1,21 +1,21 @@
 import React from "react";
-import { NavLink } from 'react-router-dom'
+import { NavLink } from "react-router-dom";
 
 function Sidebar() {
   return (
     <>
       <aside className="left-sidebar">
         <div className="scroll-sidebar">
-          <nav className="sidebar-nav">
-            <ul id="sidebarnav">
+          <nav className="sidebar-nav" id="sidabar-custom">
+            <ul>
               <li className="sidebar-item">
-              <a
+                <a
                   className="sidebar-link"
                   href="javascript:void(0)"
                   aria-expanded="false"
                 >
                   <img
-                    src="src/assets/ample/src/assets/images/users/1.jpg"
+                    src="ample/src/assets/images/users/1.jpg"
                     className="rounded-circle ms-2"
                     width={30}
                   />
@@ -25,8 +25,8 @@ function Sidebar() {
               <div className="devider" />
               <li className="sidebar-item">
                 <NavLink
-                  className="sidebar-link"
-                  to={'/'}
+                className="sidebar-link waves-effect waves-dark"
+                  to={"/"}
                   aria-expanded="false"
                 >
                   <i className="mdi mdi-home" />
@@ -35,8 +35,8 @@ function Sidebar() {
               </li>
               <li className="sidebar-item">
                 <NavLink
-                  className="sidebar-link"
-                  to={'/about'}
+                className="sidebar-link waves-effect waves-dark"
+                  to={"/about"}
                   aria-expanded="false"
                 >
                   <i className="mdi mdi-account" />
